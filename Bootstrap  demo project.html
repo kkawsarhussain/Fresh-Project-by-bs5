@@ -1,0 +1,705 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title> Bootstrap Demo Project </title>
+	
+	<!-- font awsame  -->
+	<link rel="stylesheet" href="Font Awsome/css/all.css" />
+	<link rel="stylesheet" href="Font Awsome/css/fontawesome.min.css" />
+	
+	<!-- bootstrap css link -->
+	<link rel="stylesheet" href="Bootstrap File/css/bootstrap.min.css" />
+	
+	
+	
+	<style type="text/css">
+		
+		
+		.logo{
+			width: 40px; 
+			height: auto;
+		}
+		
+		.offcanvas-div{
+			background: black; 
+			cursor: pointer; 
+		}
+		
+		.offcanvas a{
+			text-decoration: none; 
+		}
+		
+		.feedback{
+			background: #0d0422; 
+			padding: 5% 10%; 
+		}
+		
+		.carousel-div h1{
+			text-align: center; 
+			color: white; 
+		}
+		
+		.hr-style{
+			opacity: 1; 
+			border: 5px dotted white; 
+			border-bottom: none; 
+			width: 65px; 
+			margin: auto; 
+		}
+		
+		.carousel-div img{
+			width: 150px; 
+			height: auto; 
+			margin-bottom: 15px; 
+		}
+		
+		.carousel-item{
+			padding: 5% 20%; 
+		}
+		
+		.tab-content p{
+			text-align: justify; 
+		}
+		
+		.carousel-div h4{
+			margin: 20px 0; 
+		}
+		
+		@media (max-width: 800px){
+			
+			.carousel-div h4{
+				margin-bottom: 30px; 
+			}
+				
+			.carousel-item{
+				padding: 5% 10%; 
+				
+			}
+		
+		}
+		
+		
+	</style>
+</head>
+<body>
+	
+	<div class="container" id="home"> 
+	<!-- .container div starts  -->
+
+
+	
+		<!-- navbar starts here -->
+		<div class="navbar navbar-expand-md bg-primary navbar-dark px-2"> 
+			<a href="#" class="">
+				<img src="images/logo.png" alt="" class="logo" />
+			</a>
+			
+			<button class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" > 
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="navbar-collapse collapse" id="navbar"> 
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a href="#" class="nav-link active"> Home </a></li>
+					<li class="nav-item"><a href="#" class="nav-link"> About Me </a></li>
+					<li class="nav-item"><a href="#" class="nav-link"> Tutorials </a></li>
+					<li class="nav-item"><a href="#service" class="nav-link"> Services </a></li>
+					<li class="nav-item"><a href="#form" class="nav-link"> Contact Us </a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- navbar ends here -->
+		
+		
+		<!-- offcanvas -->
+		<div class="offcanvas-div border-bottom border-primary sticky-top" id="link-5"> 
+			<div class="text-uppercase text-center text-white py-3" data-bs-target="#offcanvas" data-bs-toggle="offcanvas"> 
+				<h6 class="mb-0">click here to jump all js related BS function</h6>
+			</div>
+			
+			<div class="offcanvas offcanvas-start bg-dark text-white" id="offcanvas"> 
+				<h5 class="offcanvas-header"> Here is the list of all javascript related bootstrap classes. Click on the class to show this works. <br /></h5>
+				<hr /> 
+				<div class="offcanvas-body p-4"> 
+					<ul class="list-group text-center">
+						<li class="list-group-item bg-light"> <a href="#" class="text-dark"> Home </a></li>
+						<li class="list-group-item bg-primary "> <a href="#link-1" class="text-white"> Carousel </a></li>
+						<li class="list-group-item bg-danger "> <a href="#link-7" class="text-white"> Dismissible alert button </a></li>
+						<li class="list-group-item bg-secondary "> <a href="#link-3" class="text-white"> Toggleable dynamic tab & pill </a></li>
+						<li class="list-group-item bg-info "> <a href="#link-7" class="text-white"> Collapse  </a></li>
+						<li class="list-group-item bg-success "> <a href="#link-5" class="text-white"> Offcanvas </a></li>
+						<li class="list-group-item bg-warning "> <a href="#link-6" class="text-white"> Modal </a></li>
+						<li class="list-group-item bg-info "> <a href="#link-7" class="text-white"> Accordion  </a></li>
+						<li class="list-group-item bg-primary "> <a href="#link-8" class="text-white"> Dropdown  </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- coffcanvas -->
+		
+		
+		<!-- Services -->
+		<div class="services bg-dark text-white mt-0 pb-2" id="service"> 
+			<h1 class="font-weight-bolder text-center pt-4"> Services </h1>
+			
+			<div class="row px-2 pt-4 text-md-center text-sm-start"> 
+				<div class="col-lg-3 col-md-6 col-sm-12"> 
+					<i class="fas fa-hands-helping fa-2x bg-primary text-white rounded-circle p-3"></i>
+					<h4 class="mt-2 text-uppercase"> Web Designing </h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. And also included  <abbr title="Bootstrap 5">bs5</abbr></p>
+					<blockquote class="blockquote-footer"> Our Services <cite> for our client </cite></blockquote>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12"> 
+					<i class="fas fa-hands-helping fa-2x bg-primary text-white rounded-circle p-3"></i>
+					<h4 class="mt-2 text-uppercase"> Web Designing </h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. And also included n <abbr title="Bootstrap 5">bs5</abbr> </p>
+					<blockquote class="blockquote-footer"> Our Services <cite> for our client </cite></blockquote>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12"> 
+					<i class="fas fa-hands-helping fa-2x bg-primary text-white rounded-circle p-3"></i>
+					<h4 class="mt-2 text-uppercase"> Web Designing </h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. And also included  <abbr title="Bootstrap 5">bs5</abbr> </p>
+					<blockquote class="blockquote-footer"> Our Services <cite> for our client </cite></blockquote>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12"> 
+					<i class="fas fa-hands-helping fa-2x bg-primary text-white rounded-circle p-3"></i>
+					<h4 class="mt-2 text-uppercase"> Web Designing </h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. And also included <abbr title="Bootstrap 5">bs5</abbr> </p>
+					<blockquote class="blockquote-footer"> Our Services <cite> for our client </cite></blockquote>
+				</div>
+			</div>
+		</div>
+		<!-- Services -->
+		
+		
+		<!-- Carousel -->
+		<div class="carousel-div" id="link-1"> 
+			<div class="feedback"> 
+				<h1> Feedback </h1>
+				<hr class="hr-style" />
+				
+				<div class="row text-white"> 
+					<div class="col-lg-12"> 
+						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-pause="hover" >
+							  <div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							  </div>
+							  <div class="carousel-inner">
+								<div class="carousel-item text-center active">
+									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									<img src="images/img.jpg" alt="" class="rounded-circle" />
+									<h4> Kawsar Hussain </h4>
+								</div>
+								<div class="carousel-item text-center">
+									<p class="text-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									<img src="images/img.jpg" alt="" class="rounded-circle" />
+									<h4> Kawsar Hussain </h4>
+								</div>
+								<div class="carousel-item text-center">
+									<p class="text-primary"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									<img src="images/img.jpg" alt="" class="rounded-circle" />
+									<h4> Kawsar Hussain </h4>
+								</div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							  </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Carousel -->
+		
+		
+		<!-- accordion -->
+		<div class="accordion-div mt-3" id="link-7"> 
+			<div class="accordion">
+				<div class="accordion-item"> 
+					<h1 class="accordion-button" data-bs-target="#a1" data-bs-toggle="collapse"> Accordion 1 </h1>
+				</div>
+				
+				<div class="accordion-collapse collapse show" id="a1"> 
+					<div class="accordion-body"> 
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion">
+				<div class="accordion-item"> 
+					<h1 class="accordion-button" data-bs-target="#a2" data-bs-toggle="collapse"> Accordion 2 </h1>
+				</div>
+				
+				<div class="accordion-collapse collapse" id="a2"> 
+					<div class="accordion-body"> 
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion">
+				<div class="accordion-item"> 
+					<h1 class="accordion-button" data-bs-target="#a3" data-bs-toggle="collapse"> Accordion 3 </h1>
+				</div>
+				
+				<div class="accordion-collapse collapse" id="a3"> 
+					<div class="accordion-body"> 
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- accordion -->
+		
+		
+		<!-- dismissible alert button and collapse -->
+		<div class="alert alert-dismissible alert-danger mt-2" id="link-2"> 
+			This is a dismissible alert button.
+			<a href="#collapse" data-bs-toggle="collapse" class="" id="link-4"> Learn More...</a>
+			
+			<div class="collapse" id="collapse">
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+		</div>
+		<!-- dismissible alert button and collapse -->
+		
+		
+		<!-- modal -->
+		<div class="modal-div mt-2" id="link-6">
+			<button class="btn btn-outline-primary w-100" data-bs-target="#modal" data-bs-toggle="modal"> Click here to open modal </button>
+			
+			<div class="modal fade" id="modal"> 
+				<div class="modal-dialog">
+					<div class="modal-content"> 
+						<div class="modal-header"> 
+							<h3 class="modal-title"> This is a modal </h3>
+							<button class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						
+						<div class="modal-body"> 
+							<p> Modal class is related to javascript language. </p>
+						</div>
+						
+						<div class="modal-footer"> 
+							<button class="btn btn-success"> Save Changes </button>
+							
+							<button class="btn btn-danger" data-bs-dismiss="modal"> Close </button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal -->
+		
+		
+		<!-- toggleable dynamic tab & pill -->
+		<div class="tab-pill bg-dark text-white mt-3 px-2 rounded" id="link-3"> 
+			<h2 class="text-center py-4"> Toggleable Dynamic Tab & Pill </h2>
+			<div class="row"> 
+				<div class="col-lg-6 col-md-12 mt-3"> 
+					<ul class="nav nav-tabs">
+						<li class="nav-item"><a href="#education" data-bs-toggle="tab" class="nav-link active"> Education </a></li>
+						<li class="nav-item"><a href="#skill" data-bs-toggle="tab" class="nav-link"> Skill </a></li>
+						<li class="nav-item"><a href="#hobby" data-bs-toggle="tab" class="nav-link"> Hobby </a></li>
+					</ul>
+					
+					<div class="tab-content"> 
+					
+						<div class="tab-pane active" id="education"> 
+							<p class="mt-1"> <strong>Education:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						
+						<div class="tab-pane fade" id="skill"> 
+							<p class="mt-1"> <strong>Skill:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+
+						<div class="tab-pane fade" id="hobby"> 
+							<p class="mt-1"> <strong>Hobby:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 col-md-12 mt-3"> 
+					<ul class="nav nav-pills">
+						<li class="nav-item"><a href="#education2" data-bs-toggle="pill" class="nav-link active"> Education </a></li>
+						<li class="nav-item"><a href="#skill2" data-bs-toggle="pill" class="nav-link"> Skill </a></li>
+						<li class="nav-item"><a href="#hobby2" data-bs-toggle="pill" class="nav-link"> Hobby </a></li>
+					</ul>
+					
+					<div class="tab-content"> 
+					
+						<div class="tab-pane active" id="education2"> 
+							<p class="mt-1"> <strong>Education:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						
+						<div class="tab-pane fade" id="skill2"> 
+							<p class="mt-1"> <strong>Skill:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+
+						<div class="tab-pane fade" id="hobby2"> 
+							<p class="mt-1"> <strong>Hobby:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- toggleable dynamic tab & pill -->
+		
+		
+		<!-- Dropdown -->
+		<!-- <div class="drop-doown-div border border-primary rounded p-2 mt-3"> 
+		
+			<h4 class="bg-primary text-white text-center p-2 rounded"> Dropdown & Dropup </h4>
+			
+			<div class="row" style="margin: 0 1px;"> 
+				<div class="col-lg-6 col-md-12 my-2"> 
+					<div class="dropdown">
+						<strong style="font-size: 15px;">This is a dropdown button. click to show...</strong><button class="btn btn-primary  dropdown-toggle ms-2" data-bs-toggle="dropdown"> Dropdown </button>
+						
+						<ul class="dropdown-menu">
+							<li class=""><a href="" class="dropdown-item"> <strong> Dropdown Items </strong> </a></li>
+							<li><hr /></li>
+							<li class=""><a href="#" class="dropdown-item"> Home </a></li>
+							<li class=""><a href="#service" class="dropdown-item"> Services </a></li>
+							<li class=""><a href="#link-1" class="dropdown-item"> Carousel </a></li>
+							<li class=""><a href="#link-7" class="dropdown-item"> Accordion </a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-lg-6 col-md-12 my-2"> 
+					<div class="dropup">
+						<strong>This is a dropdup button. click to show...</strong><button class="btn btn-primary  dropdown-toggle ms-2" data-bs-toggle="dropdown"> Dropup </button>
+						
+						<ul class="dropdown-menu">
+							<li class=""><a href="" class="dropdown-item"> <strong> Dropup Items </strong> </a></li>
+							<li><hr /></li>
+							<li class=""><a href="#" class="dropdown-item"> Home </a></li>
+							<li class=""><a href="#service" class="dropdown-item"> Services </a></li>
+							<li class=""><a href="#link-1" class="dropdown-item"> Carousel </a></li>
+							<li class=""><a href="#link-7" class="dropdown-item"> Accordion </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- Dropdown -->
+		
+		
+		<!-- text-truncate -->
+		<div class="text-truncate-div border border-primary rounded p-2 mt-3"> 
+			
+			<h4 class="bg-primary text-white text-center p-2 rounded"> Text Truncate </h4>
+			
+			<div class="text-truncate col-2 text-lowercase"> React.js is a Open Source Library OF  Javascript </div>
+			<span class="text-truncate text-lowercase d-inline-block" style="max-width: 150px"> React.js is a Open Source Library OF  Javascript </span>
+		</div>
+		<!-- text-truncate -->
+		
+		
+		<!-- progress bar -->
+		<div class="progress-bar-div border border-primary rounded p-2 mt-3"> 
+		
+			<h4 class="bg-primary text-white text-center p-2 rounded"> Progress Bar </h4>
+			
+			<div class="progress mt-4"> 
+				<div class="progress-bar w-25 bg-warning">25%</div>
+				<div class="progress-bar w-25 bg-success">25%</div>
+			</div>
+			
+			<div class="progress mt-4"> 
+				<div class="progress-bar progress-bar-striped progress-bar-animated w-25 bg-warning">25%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated w-25 bg-success">25%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated w-25 bg-danger">25%</div>
+			</div>
+			
+			<div class="progress mt-4"> 
+				<div class="progress-bar progress-bar-striped progress-bar-animated w-50 bg-dark">50%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated w-50 bg-info">50%</div>
+			</div>
+			
+			<div class="progress mt-4 mb-3"> 
+				<div class="progress-bar progress-bar-striped progress-bar-animated w-100 bg-primary">100%</div>
+			</div>
+			
+		</div>
+		<!-- progress bar -->
+		
+		
+		<!-- spinner -->
+		<div class="spinner-div border border-primary rounded p-2 mt-3"> 
+		
+			<h4 class="bg-primary text-white text-center p-2 rounded"> Spinner </h4>
+		
+			<div class="spinner-border" data-bs-interval=""></div>
+			<div class="spinner-border text-primary"></div>
+			<div class="spinner-border text-info"></div>
+			<div class="spinner-border text-warning"></div>
+			<div class="spinner-border text-success"></div>
+			<div class="spinner-border text-danger"></div>
+			<div class="spinner-border text-warning"></div>
+			
+			
+			<div class="spinner-grow" data-bs-interval=""></div>
+			<div class="spinner-grow text-primary"></div>
+			<div class="spinner-grow text-info"></div>
+			<div class="spinner-grow text-warning"></div>
+			<div class="spinner-grow text-success"></div>
+			<div class="spinner-grow text-danger"></div>
+			<div class="spinner-grow text-warning"></div>
+			
+		</div>
+		<!-- spinner -->
+		
+		
+		<!-- table -->
+		<table class="table table-bordered table-hover table-striped table-primary text-center mt-3 mb-0">
+			<tr class=""> 
+				<th class="user-select-none"> html </th>
+				<th class="user-select-none"> CSS </th>
+				<th class="user-select-none"> Bootstrap </th>
+				<th class="user-select-none"> Javascript </th>
+				<th class="user-select-none"> React.js </th>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+			
+			<tr class="">
+				<td class="user-select-all"> Hypertext Markup Language </td>
+				<td class="user-select-all"> Cascading Styel Sheets </td>
+				<td class="user-select-all"> CSS Frameworks </td>
+				<td class="user-select-all"> Programming Language </td>
+				<td class="user-select-all"> Javascript Open Source Library </td>
+			</tr>
+		</table>
+		<!-- table -->
+		
+		
+		<!-- form -->
+		<div class="form-div" id="form"> 
+			
+			<div class="d-flex justify-content-center"> 
+				<h2 class="py-2 px-4 shadow border rounded-3 d-inline-block mt-5 mb-3"> Submit your form </h2>
+			</div>
+			
+			<form action="https://formspree.io/f/mwkdbvlg" method="post" class="mt-3 bg-dark text-white border-bottom rounded p-3 was-validated" id="">
+				<div class="row g-3"> 
+					<div class="col-lg-6 col-md-12"> 
+						<label for="name1" class="form-label"> First Name </label>
+						<input type="text" name="First Name" id="name1" class="form-control" placeholder="Ex: Kawsar" required />
+						<div class="invalid-feedback"> Enter your first name </div>
+					</div>
+					<div class="col-lg-6 col-md-12"> 
+						<label for="name2" class="form-label"> Last Name </label>
+						<input type="text" name="Last Name" id="name2" class="form-control" placeholder="Ex: Hussain" required />
+						<div class="invalid-feedback"> Enter your last name </div>
+					</div>
+				</div>
+			
+				<div class="row g-3 mt-2"> 
+					<div class="col-lg-6 col-md-12">
+						<label for="email" class="form-label"> Email </label>
+						<input type="email" name="Email" id="email" class="form-control" placeholder="Ex: kawsar.13f@gmail.com" required />
+						<div class="form-text text-white"> <span style="color: red" class="">*</span>Your email will remain private. We will not share with anyone. </div>
+						<div class="invalid-feedback"> Enter your valid email address </div>
+					</div>
+					
+					<div class="col-lg-6 col-md-12">
+						
+						<label for="phone" class="form-label"> Phone </label>
+						
+						<div class="row g-2"> 
+							<div class="col-3">
+								<select class="form-select">
+									<option value="+880">+880</option>
+									<option value="+990">+990</option>
+									<option value="+110">+110</option>
+								</select>
+							</div>
+						
+							<div class="col-9">
+								<input type="number" name="Phone" id="phone" class="form-control" placeholder="123456789" required />
+								<div class="invalid-feedback"> Enter your valid phone number </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="mt-3">
+					<label for="add" class="form-label"> Address </label>
+					<input type="address" name="Address" id="add" class="form-control" placeholder="1234 Main St" required />
+					<div class="invalid-feedback"> Enter your address </div>
+				</div>
+				
+				<div class="mt-3">
+					<label for="add2" class="form-label"> Address 2 </label>
+					<input type="address" name="Address 2"  id="add2" class="form-control" placeholder="Appartment, Studio or floor" />
+				</div>
+				
+				<div class="row mt-1 g-3">
+					<div class="col-lg-4 col-sm-12">
+						<label for="city" class="form-label"> City </label>
+						<input type="text" name="City"  id="city" class="form-control" />
+					</div>
+					
+					<div class="col-lg-3 col-sm-12">
+						<label for="state" class="form-label"> State </label>
+						<select name="State" id="state" class="form-select">
+							<option value="Newyork"> Newyork </option>
+							<option value="Washington"> Washington </option>
+						</select>
+						
+					</div>
+					
+					<div class="col-lg-3 col-sm-12">
+						<label for="country" class="form-label"> Country </label>
+						<select name="country" id="country" class="form-select">
+							<option value="USA"> USA</option>
+							<option value="Canada"> Canada </option>
+							<option value="UK"> United Kingdom </option>
+						</select>
+					</div>
+					
+					<div class="col-lg-2 col-sm-12">
+						<label for="zip" class="form-label"> Zip </label>
+						<input type="text" name="Zip"  id="zip" class="form-control" />
+					</div>
+				</div>
+				
+				<div class="mt-4"> 
+					<div class="form-check-inline">
+						<input type="radio" name="Gender" id="male" class="form-check-input" value="Male" required />
+						<label for="male" class="form-label"> Male </label>
+					</div>
+					
+					<div class="form-check-inline">
+						<input type="radio" name="Gender" id="female" class="form-check-input" value="Female" required />
+						<label for="female" class="form-label"> Female </label>
+					</div>
+					<div class="invalid-feedback"> Select your gender </div>
+				</div>
+				
+				<div class="form-check mt-2"> 
+					<input type="checkbox" class="form-check-input" id="check" required />
+					<label for="check" class="form-label"> Check me out </label>
+				</div>
+				
+				<button class="btn btn-primary mt-3 me-1 mb-3" type="submit"> Submit </button>
+				<button class="btn mt-3 text-white mb-3" type="reset" style="background-color: red"> Reset </button>
+				
+			</form>
+		</div>
+		<!-- form -->
+		
+		
+		<!-- footer -->
+		<div class="footer bg-dark text-white text-center py-5">
+			<div class="badge-tooltip"> 
+				<h3 class=""> This project is developed by <span class="badge bg-primary" data-bs-toggle="tooltip" title="Bootstrap 5" style="cursor: pointer"><a href="#home" class="text-white text-decoration-none">bs5</a></span> </h3>
+			</div>
+			
+			<div class="">
+				<span class=""> Copyright &copy; 2023 </span> Kawsar Hussain <br /> 
+				All Rights Reserved
+			</div>
+		</div>
+		<!-- footer -->
+		
+		
+		
+		
+		
+	<!-- .container div ends  -->
+	</div>
+	
+	
+	
+	
+	
+	<!-- bootstrap js link -->
+	<script type="text/javascript" src="Bootstrap File/js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="Bootstrap File/js/bootstrap.budle.min.js"></script> -->
+</body>
+</html>
